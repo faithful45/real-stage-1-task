@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="first_header" data-testid = "test-first-header">
+        <h1 data-testid = "test-heading">Profile card</h1>
+        <section class="theme_mode" data-testid = "test-button-container">
+             <button id="light_mode"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/></svg></button>
+             <button id="dark_mode"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg></button>
+
+        </section>
+       
+    </header>
+    <main id="profile_card" data-testid = "test-profile-card">
+        <article class="cover_section" data-testid = "test-user-cover-card"></article>
+        <section class="profile_container" data-testid = "test-profile-container">
+            <figure data-testid = "test-user-avatar-container">
+                <img src="https://img.freepik.com/free-photo/portrait-futuristic-female-humanoid-with-advanced-technology_23-2151666318.jpg?semt=ais_hybrid&w=740&q=80" alt="Profile_pic" data-testid = "test-user-avatar" id="profile_img">
+            </figure>
+            <section class="button_container"  data-testid = "test-user-buttons">
+                <a href="/contact.html"><button class="connect_btn" data-testid = "test-user-contact-button">Contact</button></a>
+                <a href="/about.html"><button class="message_btn" id="message_btn"  data-testid = "test-user-about-button">About</button></a>
+                
+            </section>
+
+        </section>
+        
+        <header class="profile_header" data-testid = "test-user-profile-header-name-container">
+            <h2 data-testid = "test-user-name">CodewithFaith.</h2>
+            <p data-testid = "test-user-skill">Frontend developer</p>
+            <p id="date" data-testid = "test-user-time"></p>
+        </header>
+        <nav class="social_links"  data-testid = "test-user-social-links" >
+            <a href="https://www.facebook.com/" target="_blank" data-testid = "test-user-social-facebook"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt=""><img src="https://img.icons8.com/?size=100&id=5xOfjBXNfQiN&format=png&color=000000" alt="Linkedin logo"></a>
+            <a href="https://x.com/" target="_blank" data-testid = "test-user-social-twitter"></a>
+            <a href="https://www.linkedin.com/company/login" target="_blank" data-testid = "test-user-social-linkedin"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="twitter_logo"></a>
+            
+        </nav>
+        <section class="about_section" data-testid = "test-user-bio-container">
+            <p data-testid = "test-user-bio">
+                Hi, I'm Faithful, a Frontend Developer who loves crafting clean, responsive, 
+                and user friendly interfaces. I enjoy bringing ideas to life through code and design 
+                while constantly exploring new ways to make the web more creative and engaging.
+            </p>
+        </section>
+        <section class="hobbies_dislikes_container" data-testid = "test-user-hobbies-dislikes-container" >
+            <ul class="hobbies_container" data-testid = "test-user-dislikes-container">
+                <h2 data-testid = "test-user-dislikes-container-heading">Hobbies</h2>             
+                <li data-testid = "test-user-dislikes">Spending time thinking about project ideas to improve existing work</li>
+                <li data-testid = "test-user-dislikes">Learning outside business, branding and how design can impact brands</li>
+                <li data-testid = "test-user-dislikes">Learning and buiding small frontent project to sharpen project skills</li>
+                <li data-testid = "test-user-dislikes">Exploring new UI/UX design trends and experimenting with modern layout</li>
+                <li data-testid = "test-user-dislikes">Participating in developer communities or design forums to share ideas</li>
+                
+                
+                
+            </ul>
+            <ul class="dislikes_conatiner" data-testid = "test-user-hobbies-container">
+                <h2 data-testid = "test-user-hobbies-container-header">Dislikes</h2>
+                
+                <li data-testid = "test-user-hobbies">When creativity feels blocked or motivation drops unexpectedly.</li>
+                <li data-testid = "test-user-hobbies">Copying others work instead of creating something more original.</li>
+                <li data-testid = "test-user-hobbies">Poorly organized or cluttered user interface that makes apps hard.</li>
+                <li data-testid = "test-user-hobbies">Being rushed to complete a project without time for proper thought</li>
+                <li data-testid = "test-user-hobbies">Feeling stuck in one routine for too long without something new to learn</li>
+            </ul>
+
+        </section>
+        
+
+
+
+        
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
